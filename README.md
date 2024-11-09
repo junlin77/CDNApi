@@ -102,7 +102,7 @@ This endpoint retrieves a single user by ID.
 
 - **POST /api/users**
 
-This endpoint creates a new user. The user object should include required fields like username, email, and password.
+This endpoint creates a new user. The user object should include required fields like username, email, phone number, skillsets, and hobby.
 
 - **Request Body:**
 
@@ -172,7 +172,7 @@ This endpoint deletes a user by ID.
 
 - **POST /api/auth/register**
 
-This endpoint registers a new user. The user object must include a hashed password.
+This endpoint registers a new API user. The API user object must include a password.
 
 - **Request Body:**
 
@@ -197,7 +197,7 @@ This endpoint registers a new user. The user object must include a hashed passwo
 
 - **POST /api/auth/login**
 
-This endpoint authenticates a user and returns an access token and refresh token.
+This endpoint authenticates an API user and returns an access token and refresh token.
 
 - **Request Body:**
 
@@ -222,7 +222,7 @@ This endpoint authenticates a user and returns an access token and refresh token
 
 - **POST /api/auth/refresh**
 
-This endpoint allows the user to refresh their access token using a valid refresh token.
+This endpoint allows the API user to refresh their access token using a valid refresh token.
 
 - **Request Body:**
 
